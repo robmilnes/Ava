@@ -1,0 +1,179 @@
+body {
+	background-color: #F2F2F2;
+}
+.box {
+    margin-top: 50%;
+}
+.chat {
+	border: 1px solid #ccc;
+	height: 400px;
+	overflow-y: scroll;
+	background-color: white;
+}
+
+.chat::-webkit-scrollbar { width: 0 !important }
+.chat { -ms-overflow-style: none; }
+.chat { overflow: -moz-scrollbars-none; }
+
+.chat-inner {
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 45%;
+    border-radius: 8px;
+}
+
+.chat-container-other .chat-inner {
+	margin: 10px 0 10px 10px;
+}
+
+.chat-container-other span.party.other {
+    font-size: 0.7em;
+    padding-left: 10px;
+    position: relative;
+    bottom: -5px;
+}
+
+.chat-container-you .chat-inner {
+    background-color: #0471AF;
+    color: #fff;
+	margin: 10px 0 10px 47%;
+}
+
+.chat-container-you span.party.you {
+    font-size: 0.7em;
+    text-align: right;
+    padding-right: 10px;
+    position: relative;
+    bottom: -5px;
+    width: auto;
+    display: block;
+    right: 0px;
+}
+
+.busy {
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input {
+	margin: 20px 0 50px 0;
+}
+
+.input a {
+	vertical-align: top;
+	float: right;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background-color: #efefef;
+	padding: 7px 35px;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.input a:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.card.brd-2x {
+    border-top-width: 10px;
+}
+
+.card.card-primary {
+    border-top-color: #0471af;
+}
+.card {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 5px solid;
+    background: #fff;
+}
+.card .card-body {
+    padding: 10px;
+}
+.card .card-body {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.store-zipin {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.store-zipin .zip-in img {
+    max-height: 15px;
+}
+
+.store-zipin .zip-in a span {
+    font-size: 13px;
+    font-family: Din;
+    position: relative;
+    top: 2px;
+    margin-left: 6px;
+}
+
+.store-zipin .zip-in a span.open-until {
+    color: #7A99AC;
+}
+
+.zip-in-link {
+    color: #fff;
+    border-radius: 0;
+    padding: 14px 0px;
+    float: right;
+}
+
+.zip-in-link:hover,
+.zip-in-link:focus {
+    color: #00AAE7;
+    text-decoration: none;
+    outline: none;
+}
+
+ul#storeList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul#storeList li {
+	padding: 15px 20px;
+	font-family: Din;
+	position: relative;
+}
+
+h4.store-name {
+    font-family: DinBold, sans-serif;
+}
+
+address.store-address {
+    font-family: DinLight, sans-serif;
+}
+
+.store-actions {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+hr.store-separator {
+    position: relative;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    bottom: -15px;
+    background: #D8D8D8;
+}
+
+ul#storeList li:last-child hr {
+	display:none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Ava</title>
+		<link rel="stylesheet" href="http://www.lowescdn.com/scaffold/1.2.0/css/scaffold.min.css" crossorigin="anonymous" />
+		<link rel="stylesheet" href="assets/css/ava.css" />
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<input type="hidden" id="topic" value="chitchat" />
+		<input type="hidden" id="clientname" value="" />
+		<div class="trench trench-large no-border">
+			<div class="v-spacing-jumbo">
+				<div class="grid-container">
+					<div class="grid-40 prefix-30 mobile-grid-80">
+						<div class="box">
+							<h3>Ask Ava.</h3>
+							<br />
+							<div class="chat secondary-font"></div>
+							<div class="busy"></div>
+							<div class="input">
+								<div class="form-group">
+									<div class="input-group">
+										<input type="text" class="form-control" id="combo-input" placeholder="Ask Ava for help" autocompletetype="combo">
+										<span class="input-group-btn">
+											<a class="btn btn-primary" data-toggle="popover" data-trigger="hover" data-placement="bottom auto" title="Information" data-content="Ask Ava questions about where to find products, product comparison and store information, etc. Ava is a concept, she responds to specific types of questions whilst stringing together a humanlike response. She cannot learn - yet." href="javascript:;">
+										    	<span class="info-wrap">
+										    		<i aria-hidden="true" class="icon-speak-bubbles"></i>
+										    	</span>
+										    </a>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="storeLocations" tabindex="-1" role="dialog" aria-labelledby="DefaultModalTitle" aria-hidden="true">
+			<div class="modal-dialog modal-default">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="icon-close"></i></button>
+						<h4 class="modal-title" id="DefaultModalTitle">Stores near you</h4>
+					</div>
+					<div class="modal-body" id="storeLocationsList"><ul id="storeList"></ul></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Okay, thanks!</button>
+					</div>
+				</div>
+			</div>
+	    </div>
+		<a id="storeLocationModalTrigger" href="#storeLocations" type="button" style="visibility:hidden;" data-toggle="modal" data-target="#storeLocations">&nbsp;</a>
+	    
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://www.lowescdn.com/scaffold/1.2.0/js/scaffold.min.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/js/ava.js"></script>
+		<script type="text/javascript" src="assets/js/index.js"></script>
+		<script>$('[data-toggle="popover"]').popover();</script>
+	</body>
+</html>
